@@ -10,8 +10,8 @@ namespace Loper\Minecraft\Protocol;
  */
 abstract class AbstractVersionProtocolMap
 {
-    public const EXTERNAL = 'e';
-    public const INTERNAL = 'i';
+    public const PROTOCOL = 'p';
+    public const VERSION = 'v';
 
     /**
      * @psalm-param P $protocol
@@ -20,14 +20,14 @@ abstract class AbstractVersionProtocolMap
     public static function findByProtocol(ProtocolVersion $protocol): ServerVersion
     {
         $filtered = \array_filter(static::getMap(), static fn (array $data)
-            => (string) $data[self::INTERNAL]->value === (string) $protocol->getProtocolValue());
+            => (string) $data[self::PROTOCOL]->value === (string) $protocol->getProtocolValue());
 
         if (0 === \count($filtered)) {
             return static::getUnknownVersion();
         }
 
         /** @var ServerVersion */
-        return \array_shift($filtered)[self::EXTERNAL];
+        return \array_shift($filtered)[self::PROTOCOL];
     }
 
     /**
@@ -67,18 +67,18 @@ abstract class AbstractVersionProtocolMap
     public static function findByVersion(ServerVersion $version): ProtocolVersion
     {
         $filtered = \array_filter(static::getMap(), static fn (array $data)
-            => (string) $data[self::EXTERNAL]->value === $version->getVersionValue());
+            => (string) $data[self::VERSION]->value === $version->getVersionValue());
 
         if (0 === \count($filtered)) {
             return static::getUnknownProtocol();
         }
 
         /** @var ProtocolVersion */
-        return \array_shift($filtered)[self::INTERNAL];
+        return \array_shift($filtered)[self::VERSION];
     }
 
     /**
-     * @psalm-return array<array<array-key, JavaProtocolVersion|JavaServerVersion>>
+     * @psalm-return array<array-key, array{p: P, v: V}>
      */
     abstract public static function getMap(): array;
     abstract public static function getUnknownVersion(): ServerVersion;

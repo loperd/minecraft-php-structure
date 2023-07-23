@@ -55,8 +55,8 @@ trait MapStructureGeneratorTrait
         foreach ($versionToProtocolMap as $item) {
             $map .= <<<ITEM
                 [
-                    self::INTERNAL => {$this->getServerVersionClass()}::{$item['versionKey']},
-                    self::EXTERNAL => {$this->getProtocolVersionClass()}::{$item['protocolKey']},
+                    self::VERSION => {$this->getServerVersionClass()}::{$item['versionKey']},
+                    self::PROTOCOL => {$this->getProtocolVersionClass()}::{$item['protocolKey']},
                 ],
             ITEM . PHP_EOL;
         }
