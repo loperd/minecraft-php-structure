@@ -1,0 +1,23 @@
+{
+    "name": "loper/minecraft-php-structure-generator",
+    "description": "Minecraft Structure Protocol & Version generator for PHP.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Loper\\Minecraft\\Protocol\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "loper",
+            "email": "bizrenay@gmail.com"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "composer install -d generator/"
+        ]
+    },
+    "require": {}
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../generator/vendor/autoload.php';
+
+use Loper\Minecraft\StructureGenerator\GenerateCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application('echo', '1.0.0');
+$application->add(new GenerateCommand());
+$application->setDefaultCommand(GenerateCommand::getDefaultName(), true);
+$application->run();
