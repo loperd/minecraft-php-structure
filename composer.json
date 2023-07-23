@@ -19,5 +19,7 @@
             "composer install -d generator/"
         ]
     },
-    "require": {}
+    "require": {
+        "php": ">=8.1"
+    }
 }
