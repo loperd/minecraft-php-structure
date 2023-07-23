@@ -6,7 +6,7 @@ Implementation Protocol & Version of minecraft Java & Bedrock in the php enums, 
 ### Installation
 
 ```bash
-composer require loper/minecraft-php-structure-generator
+composer require loper/minecraft-php-structure
 ```
 
 ### Credits
