@@ -1,5 +1,5 @@
 {
-    "name": "loper/minecraft-php-structure-generator",
+    "name": "loper/minecraft-php-structure",
     "description": "Minecraft Structure Protocol & Version generator for PHP.",
     "type": "library",
     "license": "MIT",
