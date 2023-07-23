@@ -27,7 +27,7 @@ abstract class AbstractVersionProtocolMap
         }
 
         /** @var ServerVersion */
-        return \array_shift($filtered)[self::PROTOCOL];
+        return \array_shift($filtered)[self::VERSION];
     }
 
     /**
@@ -74,7 +74,7 @@ abstract class AbstractVersionProtocolMap
         }
 
         /** @var ProtocolVersion */
-        return \array_shift($filtered)[self::VERSION];
+        return \array_shift($filtered)[self::PROTOCOL];
     }
 
     /**
