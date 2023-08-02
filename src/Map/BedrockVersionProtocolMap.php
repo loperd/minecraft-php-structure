@@ -9,6 +9,10 @@ use Loper\Minecraft\Protocol\ServerVersion;
 use Loper\Minecraft\Protocol\Struct\BedrockProtocolVersion;
 use Loper\Minecraft\Protocol\Struct\BedrockServerVersion;
 
+/**
+ * @template-extends AbstractVersionProtocolMap<BedrockServerVersion>
+ * @template-extends AbstractVersionProtocolMap<BedrockProtocolVersion>
+ */
 final class BedrockVersionProtocolMap extends AbstractVersionProtocolMap
 {
 	public static array $map = [

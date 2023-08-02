@@ -9,6 +9,10 @@ use Loper\Minecraft\Protocol\ServerVersion;
 use Loper\Minecraft\Protocol\Struct\JavaProtocolVersion;
 use Loper\Minecraft\Protocol\Struct\JavaServerVersion;
 
+/**
+ * @template-extends AbstractVersionProtocolMap<JavaServerVersion>
+ * @template-extends AbstractVersionProtocolMap<JavaProtocolVersion>
+ */
 final class JavaVersionProtocolMap extends AbstractVersionProtocolMap
 {
 	public static array $map = [
@@ -2399,6 +2403,10 @@ final class JavaVersionProtocolMap extends AbstractVersionProtocolMap
 	    [
 	        self::VERSION => JavaServerVersion::JAVA_1_20_1,
 	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_1,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_23W31A,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_23W31A,
 	    ],
 	];
 

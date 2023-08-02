@@ -33,12 +33,17 @@ final class JavaVersionProtocolMapFileGenerator extends AbstractPhpFileStructure
     {
         $parser = new MinecraftFandomWikiProtocolVersionParser($content);
 
-        return $this->createMapClass($this->formatMapArrayAsSingleString(
+        $mapClass = $this->createMapClass($this->formatMapArrayAsSingleString(
             array_reverse($this->formatVersionToProtocolKeyMap(
                 $this->formatVersionToProtocolMap(
                 	$parser->parseJavaEditionTable()
             	)
             ))
         ));
+
+        $mapClass->addComment('@template-extends AbstractVersionProtocolMap<JavaServerVersion>');
+        $mapClass->addComment('@template-extends AbstractVersionProtocolMap<JavaProtocolVersion>');
+
+        return $mapClass;
     }
 }

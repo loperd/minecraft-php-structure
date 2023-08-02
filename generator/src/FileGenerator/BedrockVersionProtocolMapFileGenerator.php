@@ -31,12 +31,17 @@ final class BedrockVersionProtocolMapFileGenerator extends AbstractPhpFileStruct
     {
         $parser = new MinecraftFandomWikiProtocolVersionParser($content);
 
-        return $this->createMapClass($this->formatMapArrayAsSingleString(
+        $mapClass = $this->createMapClass($this->formatMapArrayAsSingleString(
             array_reverse($this->formatVersionToProtocolKeyMap(
                 $this->formatVersionToProtocolMap(
                 	$parser->parseBedrockEditionTable()
             	)
             ))
         ));
+
+        $mapClass->addComment('@template-extends AbstractVersionProtocolMap<BedrockServerVersion>');
+        $mapClass->addComment('@template-extends AbstractVersionProtocolMap<BedrockProtocolVersion>');
+
+        return $mapClass;
     }
 }
