@@ -2230,23 +2230,35 @@ final class BedrockVersionProtocolMap extends AbstractVersionProtocolMap
 	    ],
 	    [
 	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_10_23,
-	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_12,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_15,
 	    ],
 	    [
 	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_10_24,
-	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_12,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_15,
 	    ],
 	    [
 	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_10_25,
-	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_12,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_15,
 	    ],
 	    [
 	        self::VERSION => BedrockServerVersion::BEDROCK_1_20_10,
-	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_12,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_15,
 	    ],
 	    [
 	        self::VERSION => BedrockServerVersion::BEDROCK_1_20_12,
-	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_12,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_15,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_1_20_13,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_15,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_1_20_14,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_15,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_1_20_15,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_1_20_15,
 	    ],
 	    [
 	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_20_20,
@@ -2259,6 +2271,38 @@ final class BedrockVersionProtocolMap extends AbstractVersionProtocolMap
 	    [
 	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_20_22,
 	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_BETA_1_20_20_22,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_20_23,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_BETA_1_20_20_23,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_30_20,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_BETA_1_20_30_21,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_30_21,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_BETA_1_20_30_21,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_30_22,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_BETA_1_20_30_25,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_30_24,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_BETA_1_20_30_25,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_30_25,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_BETA_1_20_30_25,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_40_20,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_BETA_1_20_40_20,
+	    ],
+	    [
+	        self::VERSION => BedrockServerVersion::BEDROCK_BETA_1_20_40_21,
+	        self::PROTOCOL => BedrockProtocolVersion::BEDROCK_BETA_1_20_40_21,
 	    ],
 	];
 

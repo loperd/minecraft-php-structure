@@ -566,9 +566,20 @@ enum BedrockServerVersion: string implements ServerVersion
 	case BEDROCK_BETA_1_20_10_25 = '1.20.10.25';
 	case BEDROCK_1_20_10 = '1.20.10';
 	case BEDROCK_1_20_12 = '1.20.12';
+	case BEDROCK_1_20_13 = '1.20.13';
+	case BEDROCK_1_20_14 = '1.20.14';
+	case BEDROCK_1_20_15 = '1.20.15';
 	case BEDROCK_BETA_1_20_20_20 = '1.20.20.20';
 	case BEDROCK_BETA_1_20_20_21 = '1.20.20.21';
 	case BEDROCK_BETA_1_20_20_22 = '1.20.20.22';
+	case BEDROCK_BETA_1_20_20_23 = '1.20.20.23';
+	case BEDROCK_BETA_1_20_30_20 = '1.20.30.20';
+	case BEDROCK_BETA_1_20_30_21 = '1.20.30.21';
+	case BEDROCK_BETA_1_20_30_22 = '1.20.30.22';
+	case BEDROCK_BETA_1_20_30_24 = '1.20.30.24';
+	case BEDROCK_BETA_1_20_30_25 = '1.20.30.25';
+	case BEDROCK_BETA_1_20_40_20 = '1.20.40.20';
+	case BEDROCK_BETA_1_20_40_21 = '1.20.40.21';
 
 	public function getVersionValue(): string
 	{

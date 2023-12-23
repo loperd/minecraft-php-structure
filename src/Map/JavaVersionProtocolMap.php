@@ -2408,6 +2408,46 @@ final class JavaVersionProtocolMap extends AbstractVersionProtocolMap
 	        self::VERSION => JavaServerVersion::JAVA_23W31A,
 	        self::PROTOCOL => JavaProtocolVersion::JAVA_23W31A,
 	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_23W32A,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_23W32A,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_23W33A,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_23W33A,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_23W35A,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_23W35A,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_2_PRE_RELEASE1,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_2_PRE_RELEASE1,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_2_PRE_RELEASE2,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_2_PRE_RELEASE2,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_2_PRE_RELEASE3,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_2_PRE_RELEASE3,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_2_PRE_RELEASE4,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_2_PRE_RELEASE4,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_2_RELEASE_CANDIDATE1,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_2_RELEASE_CANDIDATE1,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_2_RELEASE_CANDIDATE2,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_2_RELEASE_CANDIDATE2,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_2,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_2,
+	    ],
 	];
 
 

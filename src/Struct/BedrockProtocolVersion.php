@@ -224,10 +224,15 @@ enum BedrockProtocolVersion: int implements ProtocolVersion
 	case BEDROCK_1_20_1 = 589;
 	case BEDROCK_BETA_1_20_10_20 = 592;
 	case BEDROCK_BETA_1_20_10_21 = 593;
-	case BEDROCK_1_20_12 = 594;
+	case BEDROCK_1_20_15 = 594;
 	case BEDROCK_BETA_1_20_20_20 = 598;
 	case BEDROCK_BETA_1_20_20_21 = 606;
 	case BEDROCK_BETA_1_20_20_22 = 607;
+	case BEDROCK_BETA_1_20_20_23 = 609;
+	case BEDROCK_BETA_1_20_30_21 = 612;
+	case BEDROCK_BETA_1_20_30_25 = 613;
+	case BEDROCK_BETA_1_20_40_20 = 620;
+	case BEDROCK_BETA_1_20_40_21 = 622;
 
 	public function getProtocolValue(): int
 	{
