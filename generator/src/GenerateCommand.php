@@ -13,12 +13,14 @@ use Loper\Minecraft\StructureGenerator\FileGenerator\JavaVersionFileGenerator;
 use Loper\Minecraft\StructureGenerator\FileGenerator\JavaVersionProtocolMapFileGenerator;
 use Nette\PhpGenerator\ClassLike;
 use Nette\PhpGenerator\PhpNamespace;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
+#[AsCommand('generate')]
 final class GenerateCommand extends Command
 {
     public const FANDOM_PROTOCOL_VERSION = 'https://minecraft.fandom.com/wiki/Protocol_version';
@@ -31,8 +33,6 @@ final class GenerateCommand extends Command
 	
 	%s
 	TEMPLATE;
-
-    protected static $defaultName = 'generate';
 
     protected function configure(): void
     {

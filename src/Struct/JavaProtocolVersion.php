@@ -524,6 +524,8 @@ enum JavaProtocolVersion: int implements ProtocolVersion
 	case JAVA_1_20_2_RELEASE_CANDIDATE1 = 1073741976;
 	case JAVA_1_20_2_RELEASE_CANDIDATE2 = 1073741977;
 	case JAVA_1_20_2 = 764;
+	case JAVA_1_20_4 = 765;
+	case JAVA_1_20_5 = 766;
 
 	public function getProtocolValue(): int
 	{

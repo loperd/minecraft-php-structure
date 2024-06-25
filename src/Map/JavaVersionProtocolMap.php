@@ -2448,6 +2448,18 @@ final class JavaVersionProtocolMap extends AbstractVersionProtocolMap
 	        self::VERSION => JavaServerVersion::JAVA_1_20_2,
 	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_2,
 	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_3,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_4,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_4,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_4,
+	    ],
+	    [
+	        self::VERSION => JavaServerVersion::JAVA_1_20_5,
+	        self::PROTOCOL => JavaProtocolVersion::JAVA_1_20_5,
+	    ],
 	];
 
 

@@ -616,6 +616,9 @@ enum JavaServerVersion: string implements ServerVersion
 	case JAVA_1_20_2_RELEASE_CANDIDATE1 = '1.20.2-rc1';
 	case JAVA_1_20_2_RELEASE_CANDIDATE2 = '1.20.2-rc2';
 	case JAVA_1_20_2 = '1.20.2';
+	case JAVA_1_20_3 = '1.20.3';
+	case JAVA_1_20_4 = '1.20.4';
+	case JAVA_1_20_5 = '1.20.5';
 
 	public function getVersionValue(): string
 	{
